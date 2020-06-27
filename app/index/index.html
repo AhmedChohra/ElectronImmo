@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectronImmo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm flex-column">
+        <h1 class="navbar-brand not-allowed">ElectronImmo</h1>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" id="add-item">Ajouter un bien immobilier</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <table class="table table-hover text-center align-middle">
+        <thead class="thead-dark">
+            <tr>
+                <th>Nom du bien</th>
+                <th>Location ou Vente</th>
+                <th>Ville</th>
+                <th>Superficie</th>
+                <th>Prix</th>
+                <th>Description</th>
+                <th>Photo</th>
+                <th>État de réservation</th>
+            </tr>
+        </thead>
+        <tbody id="elements">
+        </tbody>
+
+    </table>
+
+    <script>
+        require('./index')
+    </script>
+</body>
+
+</html>

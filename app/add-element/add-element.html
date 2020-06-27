@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectronImmo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col mt-3">
+                <h1>Ajouter un bien immobilier</h1>
+                <hr>
+                <div class="form-group">
+                    <label for="name">Nom du bien</label>
+                    <input type="text" id="name" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <div>
+                        <input type="radio" id="rent" name="sellOrRent" value="location" checked>
+                        <label for="rent">Location</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="sell" name="sellOrRent" value="vente">
+                        <label for="sell">Vente</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">Ville</label>
+                    <input type="text" id="city" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="size">Superficie (en m²)</label>
+                    <input type="number" id="size" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Prix (en € ou €/mois)</label>
+                    <input type="number" id="price" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea type="text" id="description" class="form-control"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="picture">Lien vers la photo du bien</label>
+                    <input type="text" id="picture" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <div>
+                        <input type="radio" id="avalable" name="avalableOrReserved" value="Réserver" checked>
+                        <label for="avalableOrReserved">Non réservé</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="reserved" name="avalableOrReserved" value="Réservé">
+                        <label for="avalableOrReserved">Réservé</label>
+                    </div>
+                </div>
+
+                <hr>
+                <button id="validation" class="btn btn-primary btn-dark">Ajouter le bien</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        require('./addElement')
+    </script>
+</body>
+
+</html>
